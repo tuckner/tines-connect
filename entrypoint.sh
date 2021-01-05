@@ -11,7 +11,7 @@ URL=`curl -s http://localhost:4040/api/tunnels | jq -r '.tunnels[0].public_url'`
 
 # Update Tines Agent with URL
 echo "Updating Tines Global Resource to $URL"
-curl -s -X PUT $TINES_URL/api/v1/global_resources/$TINES_GR_ID -H 'content-type: application/json' -H "x-user-email: $TINES_EMAIL" -H "x-user-token: $TINES_TOKEN" -d "{\"name\": \"tines_connect\", \"value_type\": \"text\", \"value\": \"$URL\"}"
+curl -s -X PUT $TINES_URL/api/v1/global_resources/$TINES_GR_ID -H 'content-type: application/json' -H "x-user-email: $TINES_EMAIL" -H "x-user-token: $TINES_TOKEN" -d "{\"name\": \"$TINES_GR_NAME\", \"value_type\": \"text\", \"value\": \"$URL\"}"
 
 # Monitor background Ngrok service
 while sleep 10; do
