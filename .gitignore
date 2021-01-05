@@ -1,0 +1,14 @@
+*.dll
+*.exe
+.DS_Store
+server.js
+environment.txt
+*.log
+*.bak
+*~
+.*.swp
+.idea
+*.iml
+*.test
+*.iml
+ngrok.yml

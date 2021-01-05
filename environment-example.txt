@@ -1,0 +1,4 @@
+TINES_EMAIL=user@email.com
+TINES_TOKEN=abcd1234abcd1234abc
+TINES_URL=https://dappled-horse-1234.tines.io
+TINES_GR_ID=65
