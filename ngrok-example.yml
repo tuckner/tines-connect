@@ -7,3 +7,4 @@ tunnels:
   tines:
     proto: http
     addr: 10.1.1.1:3000
+    # auth: "complexusername:complexpassword"
