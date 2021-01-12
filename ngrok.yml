@@ -1,0 +1,10 @@
+# web_addr needed for container, do not modify
+web_addr: 0.0.0.0:4040
+# set ngrok authtoken
+authtoken:
+tunnels:
+  # set tunnel destination, only one tunnel is supported at this time
+  tines:
+    proto: http
+    addr:
+    auth: 
