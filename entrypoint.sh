@@ -2,8 +2,10 @@
 
 set -x
 
+# Calculate Base64 Credential for GR
 AUTH=`echo "$AUTH_USERNAME:$AUTH_PASSWORD" | base64`
 
+# Set Ngrok config
 sed -i "s/auth:.*/auth: \"$AUTH_USERNAME:$AUTH_PASSWORD\"/" /home/ngrok/.ngrok2/ngrok.yml
 sed -i "s/authtoken:.*/authtoken: $NGROK_AUTHTOKEN/" /home/ngrok/.ngrok2/ngrok.yml
 sed -i "s/    addr:.*/    addr: $NGROK_ADDR/" /home/ngrok/.ngrok2/ngrok.yml
