@@ -8,7 +8,7 @@ Tines Connect is a container for [Ngrok](https://ngrok.com/) which can help prov
 
 2. Create a Global Resource in Tines and identify the ID number of the resource.
 
-3. Fill out `environment.txt` and `ngrok.yml`.
+3. Fill out `environment.txt`.
 
 4. Build the container.
 
