@@ -10,13 +10,15 @@ Tines Connect is a container for [Ngrok](https://ngrok.com/) which can help prov
 
 3. Fill out `environment.txt`.
 
-4. Build the container.
+4. Set the tunnel destination in [ngrok.yml](https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config/#tunnel-definitions).
+
+5. Build the container.
 
 ```
 docker build . --tag tines-connect
 ```
 
-5. Run the container.
+6. Run the container.
 
 ```
 docker run --env-file environment.txt --name tines-connect tines-connect 
