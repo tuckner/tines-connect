@@ -1,10 +1,10 @@
 # Tines Connect
 
-Tines Connect is a container for [Ngrok](https://ngrok.com/) which can help provide access to resources that would generally not be internet accessible.
+Tines Connect is a container for [ngrok](https://ngrok.com/) which can help provide access to resources that would generally not be internet accessible.
 
 ## Install
 
-1. Create an Ngrok account. Find your `authtoken` value.
+1. Create an ngrok account. Find your `authtoken` value.
 
 2. Create a Global Resource in Tines and identify the ID number of the resource.
 
